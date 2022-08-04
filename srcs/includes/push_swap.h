@@ -6,7 +6,7 @@
 /*   By: trozain <trozain@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 11:33:25 by jcarlen           #+#    #+#             */
-/*   Updated: 2022/08/04 16:00:11 by trozain          ###   ########.fr       */
+/*   Updated: 2022/08/04 17:23:47 by trozain          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,16 @@
 
 # define MIN_INT -2147483648
 # define MAX_INT 2147483647
+
+typedef struct s_push_swap
+{
+    char **stack;
+    char **stack_a;
+    char **stack_b;
+    int *next;
+    int num;
+    int content;
+}       t_list;
 
 /* push_swap */
 int		main(int ac, char **av);
